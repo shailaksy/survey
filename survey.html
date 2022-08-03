@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Order Form</title>
+</head>
+<body>
+   
+    <div id="main">
+        <header>
+            <p id="logo">Shookies</p><br>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Custom</li>
+                    <li>FAQ</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section id="home">
+        <div id="cookie">
+        <h1 id="title">The Chocolate Chip</h1>
+        <p id="description">Browned butter and dark chocolate chunks.<br>Gooey, chewy, and crisp from crust to crumb.
+        <p id="link"><a href="#shop">Place an order here!</a></p>
+    </div>
+    </section>
+
+    <section id="shop">
+    <div id="place">
+        <h3>Order Form</h3>
+    </div>
+
+    <section id="survey-form">
+        <section id="order-details">  
+            <div class="pic">
+                <img src="assets/box.jpeg">
+            </div>
+            <form>
+            <div class="container">
+            <label id="dropdown">Quantity:</label><br>
+            <input type="number" placeholder="xx" min="1" max="5" style='width:40px'>
+                <select name="quantity">
+                    <option value="three" selected>Box(es) of Three</option>
+                    <option value="six">Box(es) of Six</option>
+                    <option value="twelve">Box(es) of Twelve</option>
+                    <option value="twentyFour">Box(es) of Twenty-Four</option>
+                </select>
+            </label></div><br>
+            <div class="container">
+            <label id="addOns">Optional Add-ons:</label><br>
+                <input type="checkbox" name="addOns" id="giftBox" value="giftBox">
+                <label for="giftBox">Gift Box</label><br>
+                <input type="checkbox" name="addOns" id="giftTag" value="giftTag">
+                <label for="giftTag">Gift Tag</label><br>
+                <input type="checkbox" name="addOns" id="ribbon" value="ribbon">
+                <label for="ribbon">Ribbon</label><br>
+            </div> 
+            </form>
+        </section>
+        <section id="customer-details"> 
+            <form>
+            <div class="container"> 
+                <label id="name">Name:
+                <input type="text" size="30" placeholder="Your Name">
+            </label></div><br>
+            <div class="container">
+            <label id="email">Email:
+              <input type="email" size="30" placeholder="name@example.com">
+            </label></div><br>
+            <div class="container">
+            <label id="number">Contact Number:
+                <input type="number" size="30" placeholder="09xxxxxxxxx">
+            </label></div><br>
+            <div class="container">
+            <label id="address">Delivery Address:<br>
+                <textarea name="address" rows="3" cols="50" placeholder="Floor/Unit Number, Building Name/Street Address, Province, City/Municipality, Barangay/District, Landmark"></textarea>
+            </label></div><br>
+            <div class="container">
+            <label id="deliveryTime">Delivery Time:</label><br>
+                <input type="radio" name="delivery" id="amDeliv" value="am" checked>
+            <label for="amDeliv">10:00 AM to 12:00 NN</label><br>
+                <input type="radio" name="delivery" id="pmDeliv" value="pm">
+            <label for="pmDeliv">2:00 PM to 5:00 PM</label></div><br>
+            <div class="container">
+           <label id="moP">Mode of Payment:</label><br>
+                <input type="radio" name="payment" id="bankTransfer" value="bankTransfer" checked>
+                <label for="bankTransfer">Bank Transfer</label><br>
+                <input type="radio" name="payment" id="gcash" value="gcash">
+                <label for="gcash">GCash</label><br>
+                <input type="radio" name="payment" id="cod" value="cod">
+                <label for="cod">Cash on Delivery</label></div><br>
+            <div class="container">
+                <label id="notes">Notes:</label><br>
+                    <textarea name="address" rows="5" cols="50" placeholder="Any special instructions?"></textarea></div>
+            </form>
+        </section>
+     </section>        
+        <form>
+        <div id="submit">
+            <input type="submit" name="button" id="submit" value="Submit Order">
+        </div>
+        </form>
+</section>   
+
+    <footer>
+        <div class="copyright">
+            <p>© Shookies 2022</p>
+        </div>
+    </footer>
+</body>
+
+</html>

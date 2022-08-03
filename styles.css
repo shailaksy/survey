@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "cookies";
+    src: url(assets/Cookies.ttf);
+}
+
+body {
+    font-family: Roboto;
+}
+
+header {
+    background-color: #A68064;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+}
+
+#logo {
+    font-family: "cookies";
+    font-size: 40px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#home {
+    background-image: url(assets/cooki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+#cookie {
+    margin: 0;
+    padding: 80px;
+    text-align: right;
+    height: 800px;
+    color: #A68064;
+    z-index: 0;
+}    
+
+#title {
+    font-family: "cookies";
+    font-size: 83px;
+    bottom: 300px;
+    right: 50px;
+    position: absolute;
+}
+
+#description {
+    bottom: 220px;
+    right: 50px;
+    position: absolute;
+    font-size: 25px;
+    font-style: italic;
+}
+
+#link {
+    bottom: 120px;
+    right: 50px;
+    position: absolute;
+    font-size: 20px;
+}
+
+#link a:link, a:visited {
+    color: #A68064;
+    text-decoration: none;
+}
+
+#link a:hover {
+    text-decoration: underline;
+}
+
+#shop {
+    background-color: #A68064;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: sticky;
+}
+
+#place h3 {
+    font-family: "cookies";
+    font-size: 50px;
+    text-align: center;
+    background-color: #A68064;
+    padding: 50px;
+    color: white;
+}
+
+.pic img {
+    height: 450px;
+    width: auto;
+    padding: 50px;
+}
+
+#survey-form {
+    margin: 200px;
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    z-index: 3;
+    color: #A68064;
+}
+
+.container {
+    padding: 8px;
+}
+
+#dropdown, #addOns, #name, #email, #number, #address, #deliveryTime, #moP, #notes {
+    font-weight: bold;
+}
+
+input[type=text], input[type=number], input[type=email], textarea, select, checkbox {
+    border: 1.5px solid #A68064;
+    border-radius: 4px;
+}
+
+input[type=radio]:checked {
+    background-color: #A68064;
+}
+
+::placeholder {
+    font-family: Roboto;
+    color: #A68064;
+    opacity: 0.5;
+  }
