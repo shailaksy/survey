@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "cookies";
+    src: url(assets/Cookies.ttf);
+}
+
+body {
+    background-color: #A68064;
+    display: flex;
+    justify-content: center;
+}
+
+#tysec {
+    font-family: "cookies";
+    background-color: white;
+    color: #A68064;
+    border-radius: 25px;
+    font-size: 60px;
+    margin: 100px;
+    padding: 50px;
+    width: 60%;
+    text-align: center;
+}
+
+#subt {
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}

@@ -42,9 +42,12 @@
             <div class="pic">
                 <img src="assets/box.jpeg">
             </div>
-            <form>
+            <form 
+                action="thankYou.html" 
+                method="get">
             <div class="container">
             <label id="dropdown">Quantity:</label><br>
+            <p id="sub">Note: minimum of 1 Box of Three, maximum of 5 Boxes of Twenty-Four</p>
             <input type="number" placeholder="xx" min="1" max="5" style='width:40px'>
                 <select name="quantity">
                     <option value="three" selected>Box(es) of Three</option>
@@ -55,28 +58,33 @@
             </label></div><br>
             <div class="container">
             <label id="addOns">Optional Add-ons:</label><br>
-                <input type="checkbox" name="addOns" id="giftBox" value="giftBox">
-                <label for="giftBox">Gift Box</label><br>
-                <input type="checkbox" name="addOns" id="giftTag" value="giftTag">
-                <label for="giftTag">Gift Tag</label><br>
-                <input type="checkbox" name="addOns" id="ribbon" value="ribbon">
-                <label for="ribbon">Ribbon</label><br>
+                <input type="checkbox" name="addOns" id="giftBox" value="giftBox" class="checkbox">
+                <label class="checkbox">
+                    <span>Gift Box</span>
+                </label><br>
+                <input type="checkbox" name="addOns" id="giftTag" value="giftTag" class="checkbox">
+                <label class="checkbox">
+                    <span>Gift Tag</span>
+                </label><br>
+                <input type="checkbox" name="addOns" id="ribbon" value="ribbon" class="checkbox">
+                <label class="checkbox">
+                    <span>Ribbon</span>
+                </label><br>
             </div> 
-            </form>
         </section>
+
         <section id="customer-details"> 
-            <form>
             <div class="container"> 
                 <label id="name">Name:
-                <input type="text" size="30" placeholder="Your Name">
+                <input type="text" placeholder="Your Name" name="name">
             </label></div><br>
             <div class="container">
             <label id="email">Email:
-              <input type="email" size="30" placeholder="name@example.com">
+              <input type="email" placeholder="name@example.com">
             </label></div><br>
             <div class="container">
             <label id="number">Contact Number:
-                <input type="number" size="30" placeholder="09xxxxxxxxx">
+                <input type="number" placeholder="09xxxxxxxxx">
             </label></div><br>
             <div class="container">
             <label id="address">Delivery Address:<br>
@@ -89,24 +97,23 @@
                 <input type="radio" name="delivery" id="pmDeliv" value="pm">
             <label for="pmDeliv">2:00 PM to 5:00 PM</label></div><br>
             <div class="container">
-           <label id="moP">Mode of Payment:</label><br>
+                <label id="moP">Mode of Payment:</label><br>
                 <input type="radio" name="payment" id="bankTransfer" value="bankTransfer" checked>
                 <label for="bankTransfer">Bank Transfer</label><br>
                 <input type="radio" name="payment" id="gcash" value="gcash">
                 <label for="gcash">GCash</label><br>
                 <input type="radio" name="payment" id="cod" value="cod">
                 <label for="cod">Cash on Delivery</label></div><br>
-            <div class="container">
+                <div class="container">
                 <label id="notes">Notes:</label><br>
                     <textarea name="address" rows="5" cols="50" placeholder="Any special instructions?"></textarea></div>
-            </form>
+        
+                <div id="submit" class="container">
+                <input type="submit" name="button" id="submit" value="Submit Order">
+                </div>
+                </form>
         </section>
      </section>        
-        <form>
-        <div id="submit">
-            <input type="submit" name="button" id="submit" value="Submit Order">
-        </div>
-        </form>
 </section>   
 
     <footer>

@@ -24,7 +24,7 @@ header {
 
 #logo {
     font-family: "cookies";
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
@@ -42,10 +42,21 @@ nav ul li {
 }
 
 #home {
-    background-image: url(assets/cooki.jpg);
+    position: relative;
+}
+
+#home::after {
+    content: "";
+    background-image: url("assets/cooki.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
+    opacity: 0.50;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
 }
 
 #cookie {
@@ -53,7 +64,7 @@ nav ul li {
     padding: 80px;
     text-align: right;
     height: 800px;
-    color: #A68064;
+    color: #5C3317;
     z-index: 0;
 }    
 
@@ -81,7 +92,7 @@ nav ul li {
 }
 
 #link a:link, a:visited {
-    color: #A68064;
+    color: #5C3317;
     text-decoration: none;
 }
 
@@ -95,6 +106,9 @@ nav ul li {
     padding: 0;
     z-index: 2;
     position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #place h3 {
@@ -104,6 +118,7 @@ nav ul li {
     background-color: #A68064;
     padding: 50px;
     color: white;
+    margin: 0;
 }
 
 .pic img {
@@ -113,14 +128,20 @@ nav ul li {
 }
 
 #survey-form {
-    margin: 200px;
-    padding: 50px;
-    border-radius: 25px;
+    margin: 0px;
+    padding: 30px;
+    border-radius: 30px;
     display: flex;
     justify-content: space-around;
     background-color: white;
+    width: 65%;
     z-index: 3;
     color: #A68064;
+}
+
+#sub {
+    font-size: 12px;
+    font-style: italic;
 }
 
 .container {
@@ -131,17 +152,102 @@ nav ul li {
     font-weight: bold;
 }
 
-input[type=text], input[type=number], input[type=email], textarea, select, checkbox {
+input[type=text], input[type=number], input[type=email], textarea, select {
     border: 1.5px solid #A68064;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-family: Roboto;
+    color: #A68064;
+    padding: 4px;
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type=text], input[type=email] {
+    width: 300px;
+} 
+
+input[type=number] {
+    width: 220px
+}
+
+input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 0.15rem solid white;
+    background-clip: content-box;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #A68064;
+    padding: 3px;
+    cursor: pointer;
+}
+
+input[type=radio]:hover {
+    box-shadow: 0 0 10px 0px #A68064;
 }
 
 input[type=radio]:checked {
     background-color: #A68064;
+    border-width: 0.15rem;
 }
+
+
+input[type=checkbox] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 12px;
+    width: 12px;
+    border: 1px solid #A68064;
+    border-radius: 2px;
+    background-color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+    background-color: #A68064;
+}
+
+input[type=checkbox]:checked::before {
+    content: '✓';
+    color: white;
+}    
+
+input[type=checkbox]:active {
+    border: 1px solid #5C3317;
+}
+
+input[type=checkmark]:hover {
+    background-color: #A68064;
+}    
 
 ::placeholder {
     font-family: Roboto;
     color: #A68064;
     opacity: 0.5;
+  }
+
+input[type=submit] {
+    background-color: #A68064;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-family: Roboto;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+  footer {
+    text-align: center;
+    background-color: #A68064;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
   }
